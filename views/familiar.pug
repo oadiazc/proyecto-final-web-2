@@ -1,0 +1,109 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  link(rel='stylesheet' href='css/index.css')
+  title Document
+  link(rel='stylesheet' href='bootstrap-4/css/bootstrap.min.css')
+
+.container
+  .col-md-12
+    img#imag(src='img/presentacionPortada.jpg')
+  .col-md-12
+    header#hamburguesa2
+      nav.navbar.navbar-light.amber.lighten-4.mb-4
+        // Collapse button
+        button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent20' aria-controls='navbarSupportedContent20' aria-expanded='false' aria-label='Toggle navigation')
+          .animated-icon1
+            span
+            span
+            span
+        // Collapsible content
+        #navbarSupportedContent20.collapse.navbar-collapse
+          // Links
+          ul.navbar-nav.mr-auto
+            li.nav-item.active
+              a.nav-link(href='inicio')
+                | INICIO
+                span.sr-only (current)
+            li.nav-item
+              a.nav-link(href='servicios') SERVICIOS
+            li.nav-item
+              a.nav-link(href='citas') CITAS
+            li.nav-item
+              a.nav-link(href='resultados') RESULTADOS EN LINEA
+            li.nav-item
+              a.nav-link(href='contactenos') CONTACTENOS
+            li.nav-item
+              a.nav-link(href='quienes_somos') QUIENES SOMOS?
+          // Links
+        // Collapsible content
+      // /.Navbar
+br
+br
+.container
+  .col-md-10
+    h1#colortitulos
+      | FAMILIAR
+    p
+      | Son actividades acciones, actividades y procedimientos integrales basadas en el auto cuidado y auto control, dirigidas al
+      | docente y sus familias para que mejoren sus condiciones de vida y disfrutar de una vida saludable y sana.
+    br
+    div
+      img(src='img/medicina_familia.jpg')
+    br
+    h2  CRECIMIENTO Y DESARROLLO
+    br
+    ul
+      p
+        | El programa de planificaci&oacute;n familiar est&aacute; integrado por un conjunto de actividades, procedimientos e intervenciones
+        | dirigidos a hombre y mujeres en edad f&eacute;rtil, dentro de las cuales se brinda informaci&oacute;n, educaci&oacute;n, consejer&iacute;a
+        | en anticoncepci&oacute;n que incluye la entrega del m&eacute;todo de acuerdo a las condiciones cl&iacute;nicas y a lo que
+        | el usuario desea respetando siempre sus derechos e indicando sus deberes reproductivos.
+    br
+    .row
+      div
+        img#servicios(src='img/medicina_familia2.jpg')
+  br
+  br
+  h2 &iquest;QUE EXAMENES SON FUNDAMENTALES EN LOS HOMBRES?
+  br
+  ul
+    li
+      | Consulta m&eacute;dica y de enfermer&iacute;a para la orientaci&oacute;n y elecci&oacute;n del m&eacute;todo anticonceptivo de acuerdo a los criterios de elegibilidad,
+      | entre los m&eacute;todos est&aacute;n anticonceptivos orales, inyectables mensuales, trimestrales, dispositivo intrauterino,
+      | implante subdermico, m&eacute;todos definitivos como la vasectom&iacute;a y pomeroy.
+    li
+      | Consulta de seguimiento para control del m&eacute;todo
+    li
+      | Las mujeres gestantes tambi&eacute;n pueden acudir con su pareja a esta cita junto con su pareja y elegir oportunamente el m&eacute;todo
+      | que utilizara una vez termine su embarazo.
+  br
+  br
+  .container
+    center
+      p
+      h4 &ldquo;La salud no lo es todo pero sin ella,todo lo demas es nada.&rdquo;
+      p
+      p
+      h4 &ldquo;Cuida tu salud&rdquo;
+      p
+  hr.featurette-divider
+  // FOOTER
+  footer.container
+    p.float-right
+      a(href='#') Ir Arriba
+    p
+      | &copy; 2017-2018 Company, Inc. &middot;
+      a(href='#') Privacy
+      |  &middot;
+      a(href='#') Terms
+script(src='bootstrap-4/js/jquery-3.3.1.slim.min.js')
+script(src='bootstrap-4/js/bootstrap.min.js')
+script.
+  $(document).ready(function () {
+  $('.animated-icon1,.animated-icon3,.animated-icon4').click(function () {
+  $(this).toggleClass('open');
+  });
+  });

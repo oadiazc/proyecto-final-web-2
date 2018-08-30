@@ -1,0 +1,129 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  link(rel='stylesheet' href='css/index.css')
+  title Document
+  link(rel='stylesheet' href='bootstrap-4/css/bootstrap.min.css')
+  
+.container
+  .col-md-12
+    img#imag(src='img/presentacionPortada.jpg')
+  .col-md-12
+    header#hamburguesa2
+      nav.navbar.navbar-light.amber.lighten-4.mb-4
+        // Collapse button
+        button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent20' aria-controls='navbarSupportedContent20' aria-expanded='false' aria-label='Toggle navigation')
+          .animated-icon1
+            span
+            span
+            span
+        // Collapsible content
+        #navbarSupportedContent20.collapse.navbar-collapse
+          // Links
+          ul.navbar-nav.mr-auto
+            li.nav-item.active
+              a.nav-link(href='inicio')
+                | INICIO
+                span.sr-only (current)
+            li.nav-item
+              a.nav-link(href='servicios') SERVICIOS
+            li.nav-item
+              a.nav-link(href='citas') CITAS
+            li.nav-item
+              a.nav-link(href='resultados') RESULTADOS EN LINEA
+            li.nav-item
+              a.nav-link(href='contactenos') CONTACTENOS
+            li.nav-item
+              a.nav-link(href='quienes_somos') QUIENES SOMOS?
+          // Links
+        // Collapsible content
+      // /.Navbar
+center
+  h1#colortitulos
+    | BANCO DE SANGRE
+br
+br
+.container
+  .row
+    .col-md-6
+      h2#colortitulos SALVA UNA VIDA
+      p
+        | Donar sangre es un acto de Solidaridad y Responsabilidad Social, por esta raz&oacute;n, el Banco de Sangre de la
+        | Fundaci&oacute;n Valle del Lili, tiene como prop&oacute;sito educar y sensibilizar a la sociedad para generar un cambio
+        | de actitud y compromiso con la vida a trav&eacute;s de la Donaci&oacute;n de Sangre, promovi&eacute;ndola como un acto que
+        | Salva Vidas, resalta valores, promueve un estilo de vida saludable y crea cultura ciudadana.
+  br
+  .row
+    .col-md-4
+      img#servicios(src='img/sangre.jpg')
+  br
+  .row
+    .col-md-6
+      h2#colortitulos PERSONAL EN EL AREA
+      p
+        | El Banco de Sangre cuenta con la mejor tecnolog&iacute;a, equipos esteriles y un grupo de profesionales de la salud
+        | capacitado para la captaci&oacute;n, procesamiento, fraccionamiento, inmunoserolog&iacute;a y hemoclasificaci&oacute;n de
+        | grupos sangu&iacute;neos, soportado en los m&aacute;s altos &iacute;ndices de calidad como garant&iacute;a de transfusiones de componentes
+        | sanguinos seguros para los pacientes que lo requieran.
+  br
+  .row
+    .col-md-4
+      img#servicios(src='img/dirigido.png')
+  br
+  .row
+    .col-md-12
+      center
+        h1#colortitulos DONANTE IDEAL 
+      br
+      p
+        | Todos podemos ser donantes de sangre. Donar sangre salva vidas y resalta valores como la Solidaridad; es
+        | un acto desinteresado de un ser humano a otro. Lo m&aacute;s importante es que la decisi&oacute;n de donar sangre sea
+        | voluntaria, altruista y este acompa&ntilde;ada por un estilo de vida Saludable y Responsable. Adem&aacute;s de cumplir
+        | con un serie de requisitos que establecidos por el Gobierno Nacional en el Decreto 1571 de 1993, en el
+        | que reglamentan el debido funcionamiento de los Bancos de Sangre a nivel nacional, esto, con el fin de
+        | garantizar que aquella sangre donada cumpla los m&aacute;s altos &iacute;ndices de calidad para ser transfundida a
+        | quien la necesita.
+  .row
+    .col-md-12
+      center
+        h1#colortitulos CAMPA&Ntilde;AS DE DONACION 
+      br
+      p
+        | Usted, su empresa, instituci&oacute;n educativa o iglesia, puede trabajar de la mano con nosotros y ayudarnos a
+        | Salvar Vidas, realizando campa&ntilde;as de donaci&oacute;n de sangre. Para esto, contamos con dos unidades m&oacute;viles
+        | equipadas con todos los recursos f&iacute;sicos y humanos para garantizar el bienestar y comodidad de nuestros
+        | donantes. Comun&iacute;cate con nosotros al Tel: 3319090 Ext: 3248 &ndash; 3016 o escr&iacute;benos a bancodesangre@gmail.com
+        | / bancodesangre@fcvl.org
+  br
+  .row
+    .col-md-12
+      img(src='img/sangre2.jpg')
+br
+br
+br
+br
+center
+  a.fa.fa-facebook(href='www.facebook.com')
+  a.fa.fa-twitter(href='www.twitter.com')
+  a.fa.fa-google(href='wwww.gmail.com')
+  a.fa.fa-youtube(href='www.youtube.com')
+hr.featurette-divider
+// FOOTER
+footer.container
+  p.float-right
+    a(href='#') Ir Arriba
+  p
+    | &copy; 2017-2018 Company, Inc. &middot;
+    a(href='#') Privacy
+    |  &middot;
+    a(href='#') Terms
+script(src='bootstrap-4/js/jquery-3.3.1.slim.min.js')
+script(src='bootstrap-4/js/bootstrap.min.js')
+script.
+  $(document).ready(function () {
+  $('.animated-icon1,.animated-icon3,.animated-icon4').click(function () {
+  $(this).toggleClass('open');
+  });
+  });

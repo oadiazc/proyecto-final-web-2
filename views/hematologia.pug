@@ -1,0 +1,129 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  link(rel='stylesheet' href='css/index.css')
+  title Document
+  link(rel='stylesheet' href='bootstrap-4/css/bootstrap.min.css')
+
+.container
+  .col-md-12
+    img#imag(src='img/presentacionPortada.jpg')
+  .col-md-12
+    header#hamburguesa2
+      nav.navbar.navbar-light.amber.lighten-4.mb-4
+        // Collapse button
+        button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent20' aria-controls='navbarSupportedContent20' aria-expanded='false' aria-label='Toggle navigation')
+          .animated-icon1
+            span
+            span
+            span
+        // Collapsible content
+        #navbarSupportedContent20.collapse.navbar-collapse
+          // Links
+          ul.navbar-nav.mr-auto
+            li.nav-item.active
+              a.nav-link(href='inicio')
+                | INICIO
+                span.sr-only (current)
+            li.nav-item
+              a.nav-link(href='servicios') SERVICIOS
+            li.nav-item
+              a.nav-link(href='citas') CITAS
+            li.nav-item
+              a.nav-link(href='resultados') RESULTADOS EN LINEA
+            li.nav-item
+              a.nav-link(href='contactenos') CONTACTENOS
+            li.nav-item
+              a.nav-link(href='quienes_somos') QUIENES SOMOS?
+          // Links
+        // Collapsible content
+      // /.Navbar
+center
+  h1#colortitulos
+    | HEMATOLOGIA
+br
+br
+.container
+  .row
+    .col-md-6
+      h2#colortitulos INTRODUCCION
+      p
+        | Por ser espor&aacute;dicas, muchas pruebas diagn&oacute;sticas son excluidas de los portafolios de servicio. Este laboratorio
+        | implementa pruebas diagn&oacute;sticas que se utilizan pocas veces al mes, pero que representan mucho para el
+        | paciente que las requiere de forma espor&aacute;dica, garantizando la disponibilidad continua, o muy cercana,
+        | para facilitar la atenci&oacute;n en salud.
+  br
+  .row
+    .col-md-4
+      img#servicios(src='img/hematologia2.jpg')
+  br
+  .row
+    .col-md-6
+      h2#colortitulos &iquest;A QUIEN VA DIRIGIDO?
+      p
+        | A pacientes con enfermedad hematol&oacute;gica, con diagn&oacute;sticos poco frecuentes, trastornos de coagulaci&oacute;n, de
+        | baja incidencia en la poblaci&oacute;n general, que consultan con baja frecuencia a los servicios de urgencias
+        | o de forma programada, para intervenciones quir&uacute;rgicas.
+  br
+  .row
+    .col-md-4
+      img#servicios(src='img/dirigido.png')
+  br
+  .row
+    .col-md-12
+      h2#colortitulos PROCESOS INCLUIDO 
+      p
+        | El Laboratorio de Hemostasia y Hematolog&iacute;a Especial de la Fundaci&oacute;n Valle del Lili pone a disposici&oacute;n los
+        | siguientes servicios:
+      ul.list-group
+        li.list-group-item
+          | - Anomal&iacute;as de la coagulaci&oacute;n (Tiempos de: Protrombina-TP, Tromboplastina Parcial Activada- aTPP, Trombina-TT,
+          | Fibrin&oacute;geno, Mezclas para TP Y aTPP.
+        li.list-group-item
+          | - Hemostasia Primaria- evaluaci&oacute;n de funci&oacute;n por agregaci&oacute;n plaquetaria para estudio de sangrado con
+          | 4 agonistas: ADP, EPN, Col&aacute;geno, Ristocetina.
+        li.list-group-item
+          | - Agregaci&oacute;n plaquetaria para estudio de hiperagregabilidad o trombosis: ADP (Concentraciones de 2.3,
+          | 1.2 &ndash; 0.6 uM) &ndash; y EPN (11 uM, 1.1 uM, 0.6 uM).
+        li.list-group-item
+          | - Agregaci&oacute;n plaquetaria para estudio de enfermedad de von Willebrand: RIPA (4 diluciones con Ristocetina
+          | 1.2, 0.6, 0.5, 0.3).
+        li.list-group-item
+          | - Agregaci&oacute;n plaquetaria para seguimiento a tratamiento con aspirina: &aacute;cido araquid&oacute;nico.
+        li.list-group-item - Adhesividad plaquetaria con Col&aacute;geno/ADP, Col&aacute;geno/EPN. M&eacute;todo: PFA-200.
+        li.list-group-item
+          | - Hemostasia secundaria &ndash; estudio de sangrado: determinaci&oacute;n de actividad de factores de la coagulaci&oacute;n:
+          | factor II, V, VII, VIII, IX, X, XI.
+        li.list-group-item
+          | - Hemostasia secundaria- ant&iacute;geno de factor de von Willebrand, determinaci&oacute;n de la actividad de factor
+          | de von Willebrand (Cofactor de ristocetina).
+        li.list-group-item - Trombocitopenia inducida por Heparina (HIT IgG).
+        li.list-group-item
+          | - Estudio de trombofilias: actividad de prote&iacute;na C, prote&iacute;na S, anticoagulante l&uacute;pico (Tamizaje y Confirmatorio).
+        li.list-group-item
+          | - Mutaci&oacute;n del factor V de Leiden (Resistencia a la prote&iacute;na C activada por PCR).
+        li.list-group-item - Mutaci&oacute;n G20210A del gen de la protrombina.
+        li.list-group-item
+          | - Pruebas viscoel&aacute;sticas (tromboelastograf&iacute;a, mapeo plaquetario ( ADP / AA con/sin heparinasa).
+br
+br
+hr.featurette-divider
+// FOOTER
+footer.container
+  p.float-right
+    a(href='#') Ir Arriba
+  p
+    | &copy; 2017-2018 Company, Inc. &middot;
+    a(href='#') Privacy
+    |  &middot;
+    a(href='#') Terms
+script(src='bootstrap-4/js/jquery-3.3.1.slim.min.js')
+script(src='bootstrap-4/js/bootstrap.min.js')
+script.
+  $(document).ready(function () {
+  $('.animated-icon1,.animated-icon3,.animated-icon4').click(function () {
+  $(this).toggleClass('open');
+  });
+  });

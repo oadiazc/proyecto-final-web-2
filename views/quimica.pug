@@ -1,0 +1,118 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  link(rel='stylesheet' href='css/index.css')
+  title Document
+  link(rel='stylesheet' href='bootstrap-4/css/bootstrap.min.css')
+
+.container
+  .col-md-12
+    img#imag(src='img/presentacionPortada.jpg')
+  .col-md-12
+    header#hamburguesa2
+      nav.navbar.navbar-light.amber.lighten-4.mb-4
+        // Collapse button
+        button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent20' aria-controls='navbarSupportedContent20' aria-expanded='false' aria-label='Toggle navigation')
+          .animated-icon1
+            span
+            span
+            span
+        // Collapsible content
+        #navbarSupportedContent20.collapse.navbar-collapse
+          // Links
+          ul.navbar-nav.mr-auto
+            li.nav-item.active
+              a.nav-link(href='inicio')
+                | INICIO
+                span.sr-only (current)
+            li.nav-item
+              a.nav-link(href='servicios') SERVICIOS
+            li.nav-item
+              a.nav-link(href='citas') CITAS
+            li.nav-item
+              a.nav-link(href='resultados') RESULTADOS EN LINEA
+            li.nav-item
+              a.nav-link(href='contactenos') CONTACTENOS
+            li.nav-item
+              a.nav-link(href='quienes_somos') QUIENES SOMOS?
+          // Links
+        // Collapsible content
+      // /.Navbar
+center
+  h1#colortitulos
+    | QUIMICA GENERAL
+br
+br
+.container
+  .row
+    .col-md-6
+      h2#colortitulos INTRODUCCION
+      p
+        | La Bioqu&iacute;mica cl&iacute;nica es la rama de las ciencias de laboratorio cl&iacute;nico dedicada al estudio in vitro e in
+        | vivo de propiedades bioqu&iacute;micas, con el prop&oacute;sito de suministrar informaci&oacute;n para la prevenci&oacute;n, el diagn&oacute;stico,
+        | el pron&oacute;stico y el tratamiento de las enfermedades. El bioqu&iacute;mico cl&iacute;nico es un experto de laboratorio
+        | responsable de la toma de muestras biol&oacute;gicas, su an&aacute;lisis y la validaci&oacute;n de los resultados para interpretaci&oacute;n
+        | m&eacute;dica.
+  br
+  .row
+    .col-md-4
+      img#servicios(src='img/quimica2.jpg')
+  br
+  .row
+    .col-md-6
+      h2#colortitulos &iquest;A QUIEN VA DIRIGIDO?
+      p
+        | A pacientes que se encuentran afectados por un proceso quimico de forma espont&aacute;nea o en su defecto, que
+        | despu&eacute;s de una atenci&oacute;n en salud, necesite el aporte de un laboratorio de quimica que permita identificar
+        | y adem&aacute;s, informar qu&eacute; medicamentos,examenes son &uacute;tiles para erradicar este prblema.
+  br
+  .row
+    .col-md-4
+      img#servicios(src='img/dirigido.png')
+  br
+  .row
+    .col-md-12
+      h2#colortitulos PROCESOS INCLUIDO 
+      p
+        | El Laboratorio de Parasitolog&iacute;a de la Fundaci&oacute;n Valle del Diaz pone a disposici&oacute;n los siguientes procesos:
+      ul.list-group
+        li.list-group-item - Glucosa
+        li.list-group-item - Test de Sullivan .
+        li.list-group-item - Curva de Tolerancia a la Glucosa (TOG) .
+        li.list-group-item - Fosfatasa &Aacute;cidai .
+        li.list-group-item - Nitr&oacute;geno de Urea .
+        li.list-group-item - Creatinina .
+        li.list-group-item - &Aacute;cido &Uacute;rico .
+        li.list-group-item - Enzimas .
+        li.list-group-item - Perfil Lip&iacute;dico .       
+        li.list-group-item - Helicobacter pylori .
+        li.list-group-item - Ant&iacute;geno Fecal de Giardia/Cryptosporidium .
+        li.list-group-item - Clostridium Difficile .
+        li.list-group-item - Heces por Par&aacute;sitos Intestinales .
+        li.list-group-item - Heces por Amebas .
+        li.list-group-item - Examen coprol&oacute;gico .
+        li.list-group-item - Helicobacter pylori .
+        li.list-group-item - Ant&iacute;geno Fecal de Giardia/Cryptosporidium .
+        li.list-group-item - Clostridium Difficile .
+br
+br
+hr.featurette-divider
+// FOOTER
+footer.container
+  p.float-right
+    a(href='#') Ir Arriba
+  p
+    | &copy; 2017-2018 Company, Inc. &middot;
+    a(href='#') Privacy
+    |  &middot;
+    a(href='#') Terms
+script(src='bootstrap-4/js/jquery-3.3.1.slim.min.js')
+script(src='bootstrap-4/js/bootstrap.min.js')
+script.
+  $(document).ready(function () {
+  $('.animated-icon1,.animated-icon3,.animated-icon4').click(function () {
+  $(this).toggleClass('open');
+  });
+  });

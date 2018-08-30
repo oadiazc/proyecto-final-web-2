@@ -1,0 +1,101 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  link(rel='stylesheet' href='css/index.css')
+  title Document
+  link(rel='stylesheet' href='bootstrap-4/css/bootstrap.min.css')
+
+.container
+  .col-md-12
+    img#imag(src='img/presentacionPortada.jpg')
+  .col-md-12
+    header#hamburguesa2
+      nav.navbar.navbar-light.amber.lighten-4.mb-4
+        // Collapse button
+        button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent20' aria-controls='navbarSupportedContent20' aria-expanded='false' aria-label='Toggle navigation')
+          .animated-icon1
+            span
+            span
+            span
+        // Collapsible content
+        #navbarSupportedContent20.collapse.navbar-collapse
+          // Links
+          ul.navbar-nav.mr-auto
+            li.nav-item.active
+              a.nav-link(href='inicio')
+                | INICIO
+                span.sr-only (current)
+            li.nav-item
+              a.nav-link(href='servicios') SERVICIOS
+            li.nav-item
+              a.nav-link(href='citas') CITAS
+            li.nav-item
+              a.nav-link(href='resultados') RESULTADOS EN LINEA
+            li.nav-item
+              a.nav-link(href='contactenos') CONTACTENOS
+            li.nav-item
+              a.nav-link(href='quienes_somos') QUIENES SOMOS?
+          // Links
+        // Collapsible content
+      // /.Navbar
+br
+br
+.container
+  .col-md-12
+    h1#colortitulos
+      | QUIENES SOMOS
+    p
+      | Pearson es la empresa l&iacute;der en educaci&oacute;n en todo el mundo. Desde la etapa pre-escolar a secundaria, aprendizaje temprano
+      | a una certificaci&oacute;n profesional. Nuestros materiales de estudio, herramientas de aprendizaje multimedia y
+      | programas de pruebas ayudan a millones de personas en todo el mundo, m&aacute;s que cualquier otra empresa privada.
+      | Pearson es la empresa de educaci&oacute;n m&aacute;s importante en todo el mundo. Proporciona materiales educativos, tecnolog&iacute;as,
+      | evaluaciones y servicios relacionados con la educaci&oacute;n a profesores y alumnos de todas las edades. Operamos
+      | en m&aacute;s de 70 pa&iacute;ses. Publicamos de acuerdo con los planes de estudios de las diferentes naciones a trav&eacute;s
+      | de una amplia variedad de sellos, como Scott Foresman, Prentice Hall, Addison-Wesley y Longman. Somos el
+      | proveedor l&iacute;der de programas de aprendizaje electr&oacute;nico, adem&aacute;s de ser la principal compa&ntilde;&iacute;a en el desarrollo
+      | de ex&aacute;menes, el procesamiento y la evaluaci&oacute;n de servicios educativos a instituciones, empresas y organismos
+      | profesionales de todo el mundo.
+    br
+    div
+      h1#colortitulos
+        | MISION
+      p
+        | El Laboratorio Cl&iacute;nico San Jos&eacute; tienen como misi&oacute;n el contribuir con el mejoramiento de la calidad de vida del la poblaci&oacute;n
+        | costarricense, a trav&eacute;s del suministro de ayudas diagn&oacute;sticas que satisfacen las exigencias de la medicina
+        | moderna, proporcionando resultados confiables y oportunos con el m&aacute;s alto desarrollo profesional, tecnol&oacute;gico
+        | y de servicio.
+    br
+    div
+      h1#colortitulos
+        | VISION
+      p
+        | Proyectamos un crecimiento de nuestra empresa, acorde a nuestra importante trayectoria y lo que hemos consolidado en a&ntilde;os
+        | de funcionamiento. Nuestro objetivo es constituirnos en el Laboratorio Cl&iacute;nico preferido, reconocido
+        | por su excelencia en servicio y calidad.
+br
+.container
+  .row
+    .col-md-4
+      img#servicios(src='img/mision.png')
+br
+br
+hr.featurette-divider
+// FOOTER
+footer.container
+  p.float-right
+    a(href='#') Ir Arriba
+  p
+    | &copy; 2017-2018 Company, Inc. &middot;
+    a(href='#') Privacy
+    |  &middot;
+    a(href='#') Terms
+script(src='bootstrap-4/js/jquery-3.3.1.slim.min.js')
+script(src='bootstrap-4/js/bootstrap.min.js')
+script.
+  $(document).ready(function () {
+  $('.animated-icon1,.animated-icon3,.animated-icon4').click(function () {
+  $(this).toggleClass('open');
+  });
+  });

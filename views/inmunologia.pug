@@ -1,0 +1,120 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  link(rel='stylesheet' href='css/index.css')
+  title Document
+  link(rel='stylesheet' href='bootstrap-4/css/bootstrap.min.css')
+ 
+.container
+  .col-md-12
+    img#imag(src='img/presentacionPortada.jpg')
+  .col-md-12
+    header#hamburguesa2
+      nav.navbar.navbar-light.amber.lighten-4.mb-4
+        // Collapse button
+        button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent20' aria-controls='navbarSupportedContent20' aria-expanded='false' aria-label='Toggle navigation')
+          .animated-icon1
+            span
+            span
+            span
+        // Collapsible content
+        #navbarSupportedContent20.collapse.navbar-collapse
+          // Links
+          ul.navbar-nav.mr-auto
+            li.nav-item.active
+              a.nav-link(href='inicio')
+                | INICIO
+                span.sr-only (current)
+            li.nav-item
+              a.nav-link(href='servicios') SERVICIOS
+            li.nav-item
+              a.nav-link(href='citas') CITAS
+            li.nav-item
+              a.nav-link(href='resultados') RESULTADOS EN LINEA
+            li.nav-item
+              a.nav-link(href='contactenos') CONTACTENOS
+            li.nav-item
+              a.nav-link(href='quienes_somos') QUIENES SOMOS?
+          // Links
+        // Collapsible content
+      // /.Navbar
+center
+  h1#colortitulos
+    | INMUNOLOGIA
+br
+br
+.container
+  .row
+    .col-md-6
+      h2#colortitulos INTRODUCCION
+      p
+        | A medida que avanza el conocimiento, es m&aacute;s claro que pese a la disponibilidad de antibi&oacute;ticos y otras terapias
+        | farmacol&oacute;gicas, se depende principalmente de la capacidad del organismo de identificar, detener el avance
+        | y erradicar a los agentes infecciosos. Similarmente, se comprende mejor el rol que cumple el sistema
+        | inmunol&oacute;gico (las defensas del organismo) en enfermedades diversas, y c&oacute;mo controlarlas. Este laboratorio
+        | centra sus esfuerzos en el estudio de marcadores biol&oacute;gicos de la inmunidad, as&iacute; como de la capacidad
+        | de las defensas de actuar contra microorganismos pat&oacute;genos.
+  br
+  .row
+    .col-md-4
+      img#servicios(src='img/inmunologia2.jpg')
+  br
+  .row
+    .col-md-6
+      h2#colortitulos &iquest;A QUIEN VA DIRIGIDO?
+      p
+        | Este servicio impacta directamente en las circunstancias en que un paciente no responde de forma habitual
+        | a los tratamientos antibi&oacute;ticos. Frecuentemente, se trata de personas con infecciones repetidas con g&eacute;rmenes
+        | comunes, m&aacute;s all&aacute; de lo esperado para la poblaci&oacute;n general. Y es en estos casos, en los que el laboratorio
+        | efect&uacute;a pruebas diagn&oacute;sticas en sangre, para pacientes con s&iacute;ndromes al&eacute;rgicos, y aquellos con enfermedad
+        | autoinmune (pacientes en quienes el sistema inmunol&oacute;gico lesiona partes propias).
+  br
+  .row
+    .col-md-4
+      img#servicios(src='img/dirigido.png')
+  br
+  .row
+    .col-md-12
+      h2#colortitulos PROCESOS INCLUIDO 
+      p
+        | El Laboratorio de Inmunolog&iacute;a e Inmunodeficiencias de la Fundaci&oacute;n Valle del Lili pone a disposici&oacute;n los
+        | siguientes servicios:
+      ul.list-group
+        li.list-group-item
+          | - Detecci&oacute;n de anticuerpos contra componentes celulares que marcan enfermedad autoinmune por t&eacute;cnicas
+          | de inmunofluorescencia.
+        li.list-group-item
+          | - Cuantificaci&oacute;n de anticuerpos tipo IgE espec&iacute;fico contra extractos de purificados de al&eacute;rgenos por
+          | m&eacute;todo FEIA, &uacute;til en el diagn&oacute;stico y monitoreo de las terapias de intervenci&oacute;n en el paciente al&eacute;rgico.
+        li.list-group-item
+          | - Detecci&oacute;n de ant&iacute;genos y anticuerpos de uso com&uacute;n, otros de alta complejidad, para el algoritmo diagn&oacute;stico
+          | de enfermedad autoinmune.
+        li.list-group-item
+          | - Estudios de biolog&iacute;a celular para cultivo de linfocitos, con estimulaci&oacute;n para detectar deficiencias
+          | de la inmunidad celular.
+        li.list-group-item
+          | - Estudios de biolog&iacute;a celular para capacidad oxidativa celular por t&eacute;cnica de dihidrorodamina (estallido
+          | respiratorio de granulocitos).
+        li.list-group-item - Estudios de electroforesis de prote&iacute;nas.
+br
+br
+hr.featurette-divider
+// FOOTER
+footer.container
+  p.float-right
+    a(href='#') Ir Arriba
+  p
+    | &copy; 2017-2018 Company, Inc. &middot;
+    a(href='#') Privacy
+    |  &middot;
+    a(href='#') Terms
+script(src='bootstrap-4/js/jquery-3.3.1.slim.min.js')
+script(src='bootstrap-4/js/bootstrap.min.js')
+script.
+  $(document).ready(function () {
+  $('.animated-icon1,.animated-icon3,.animated-icon4').click(function () {
+  $(this).toggleClass('open');
+  });
+  });

@@ -1,0 +1,314 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  link(rel='stylesheet' href='css/index.css')
+  title Document
+  link(rel='stylesheet' href='bootstrap-4/css/bootstrap.min.css')
+  link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+
+.col-md-11
+  header#hamburguesa
+    nav.navbar.navbar-light.amber.lighten-4.mb-4 
+      // Collapse button
+      button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent20' aria-controls='navbarSupportedContent20' aria-expanded='false' aria-label='Toggle navigation')
+        .animated-icon1
+          span
+          span
+          span
+      // Collapsible content
+      #navbarSupportedContent20.collapse.navbar-collapse
+        // Links
+        ul.navbar-nav.mr-auto
+          li.nav-item.active
+            a.nav-link(href='inicio')
+              | INICIO
+              span.sr-only (current)
+          li.nav-item
+            a.nav-link(href='servicios') SERVICIOS
+          li.nav-item
+            a.nav-link(href='citas') CITAS
+          li.nav-item
+            a.nav-link(href='resultados') RESULTADOS EN LINEA
+          li.nav-item
+            a.nav-link(href='contactenos') CONTACTENOS
+          li.nav-item
+            a.nav-link(href='quienes_somos') QUIENES SOMOS?
+        // Links
+      // Collapsible content
+    // /.Navbar
+.container
+
+#carouselExampleControls.carousel.slide(data-ride='carousel')
+  .carousel-inner
+    .carousel-item.active
+      img.d-block.w-100(src='img/banner.jpg' alt='First slide')
+    .carousel-item
+      img.d-block.w-100(src='img/banner2.jpg' alt='Second slide')
+    .carousel-item
+      img.d-block.w-100(src='img/banner.jpg' alt='Third slide')
+    .carousel-item
+      img.d-block.w-100(src='img/banner2.jpg' alt='Third slide')
+    .carousel-item
+      img.d-block.w-100(src='img/banner.jpg' alt='Third slide')
+        
+      
+  a.carousel-control-prev(href='#carouselExampleControls' role='button' data-slide='prev')
+    span.carousel-control-prev-icon(aria-hidden='true')
+    span.sr-only Previous
+  a.carousel-control-next(href='#carouselExampleControls' role='button' data-slide='next')
+    span.carousel-control-next-icon(aria-hidden='true')
+    span.sr-only Next
+  #carouselExampleSlidesOnly.carousel.slide(data-ride='carousel')
+  .carousel-inner
+   
+
+  br
+  br
+  .container
+    .row
+      .col-md-8
+        #titulos
+          center
+            h1 SERVICIOS
+        #caja.col-md-12
+          .col-md-4
+            h2 NI&Ntilde;OS
+            p
+              | Es frecuente en escuelas y jardines de ni&ntilde;os solicitar a los padres de familia ...
+            a#btn.btn.btn-primary.btn-md(href='ninos')
+              | LEER MAS
+              i.fa.fa-sign-in
+          .col-md-4
+            h2 HOMBRES
+            p
+              b Es una realidad:
+              |  a los hombres les cuesta mucho m&aacute;s ir al m&eacute;....
+            a#btn.btn.btn-primary.btn-md(href='hombres')
+              | LEER MAS
+              i.fa.fa-sign-in
+          .col-md-4
+            h2 MUJERES
+            p Las mujeres siempre han tenido una esperanza de vida mayor que los ... 
+            a#btn.btn.btn-primary.btn-md(href='mujeres')
+              | LEER MAS
+              i.fa.fa-sign-in
+        br
+        br
+        #caja.col-md-12
+          .col-md-4
+            h2 MATERNAS
+            p
+              | En la mayor&iacute;a de las citas de atenci&oacute;n prenatal con tu m&eacute;dico o profesional de la salud se te
+              | pedir&aacute;...
+            a#btn.btn.btn-primary.btn-md(href='maternas')
+              | LEER MAS
+              i.fa.fa-sign-in
+          .col-md-4
+            h2 T.EDAD
+            p
+              | Incluso si usted se siente bien, debe visitar a su proveedor para que le realice ...
+            a#btn.btn.btn-primary.btn-md(href='tercera_edad')
+              | LEER MAS
+              i.fa.fa-sign-in
+          .col-md-4
+            h2 FAMILIAR
+            p Incluso si usted se siente bien, debe visitar a su proveedor para que le realice ...
+            a#btn.btn.btn-primary.btn-md(href='familiar')
+              | LEER MAS
+              i.fa.fa-sign-in
+      // bien
+      .col-md-4
+        .container
+          .row
+            .col-md-offset-5.col-md-12
+              h2 INICIE SU REGISTRO
+              br
+              // Button to Open the Modal
+              button#btn.btn.btn-primary.btn-md(type='button', data-toggle='modal', data-target='#myModal')
+                | REGISTRAR
+              // The Modal
+              #myModal.modal.fade
+                .modal-dialog
+                  .modal-content
+                    // Modal Header
+                    .modal-header
+                      h4.modal-title ESCRIBE TUS DATOS
+                      
+                    // Modal body
+                    .modal-body
+                      h5 NOMBRE:
+                      input#Nombre_cliente.form-control.input-sm.chat-input(type='text', placeholder='INGRESE EL NOMBRE')
+                      br
+                      h5 TIPO DE DOCUMENTO:
+                      select#Tipo_cedula_cliente.form-control.input-sm.chat-input
+                        option REGISTRO CIVIL
+                        option TARJETA DE IDENTIDAD
+                        option CEDULA DE CIUDADANIA
+                        option CEDULA EXTRANJERA
+                      br
+                      h5 NUMERO DE DOCUMENTO:
+                      input#Cedula_cliente.form-control.input-sm.chat-input(type='number', placeholder='INGRESE SU DOCUMENTO')
+                      br
+                      h5 TELEFONO:
+                      input#Telefono_cliente.form-control.input-sm.chat-input(type='number', placeholder='INGRESE SU TELEFONO')
+                      br
+                      h5 CATEGORIA:
+                      select#Categoria_cliente.form-control.input-sm.chat-input
+                        option 1
+                        option 2
+                        option 3
+                        option 4
+                      br
+                      h5 EMAIL:
+                      input#Email_cliente.form-control.input-sm.chat-input(type='text', placeholder='INGRESE EL EMAIL')
+                      br
+                      h5 CONTRASEÑA:
+                      input#clave.form-control.input-sm.chat-input(type='password', placeholder='INGRESE LA CONTRASEÑA')
+                      br
+                      button#btnRegistro.btn.btn-primary.btn-md(type='button') REGISTRAR
+                      .modal-footer
+                      button.btn.btn-danger(type='button', data-dismiss='modal') SALIR
+
+        br
+        br
+        .container
+          .row
+            .col-md-offset-5.col-md-12
+              h2 INGRESE
+              br
+              // Button to Open the Modal
+              button#btn.btn.btn-primary.btn-md(type='button', data-toggle='modal', data-target='#myModalIngrese')
+                | INGRESAR
+              // The Modal
+              #myModalIngrese.modal.fade
+                .modal-dialog
+                  .modal-content
+                    // Modal Header
+                    .modal-header
+                      h4.modal-title ESCRIBE TUS DATOS
+                      
+                    // Modal body
+                    .modal-body                      
+                      h5 EMAIL:
+                      input#Email_cliente1.form-control.input-sm.chat-input(type='text', placeholder='INGRESE EL EMAIL')
+                      br
+                      h5 CONTRASEÑA:
+                      input#Contrasena_cliente1.form-control.input-sm.chat-input(type='password', placeholder='INGRESE LA CONTRASEÑA')
+                      br
+                      button#btnInicio.btn.btn-primary.btn-md(type='button', data-dismiss='modal') INGRESAR
+                      .modal-footer
+                      button.btn.btn-danger(type='button', data-dismiss='modal') SALIR
+
+                      
+
+        br
+        br
+        img(src='img/mision.png' id="imgInicio")
+  .container
+    center
+      h1  NOTICIAS 
+  br
+  br
+  .row
+    .col-lg-4.portfolio-item
+      .card.h-100
+        a(href='http://www.eltiempo.com/cultura/gente/mueren-11-bebes-por-un-ensayo-clinico-con-viagra-en-holanda-247554')
+          img.card-img-top(src='img/noti1.jpeg' alt='')
+        .card-body
+          h4.card-title
+            a(href='http://www.eltiempo.com/cultura/gente/mueren-11-bebes-por-un-ensayo-clinico-con-viagra-en-holanda-247554') La inesperada muerte de 11 beb&eacute;s por un ensayo cl&iacute;nico con Viagra
+    .col-lg-4.portfolio-item
+      .card.h-100
+        a(href='http://www.eltiempo.com/mundo/venezuela/62-medicos-graduados-de-la-habana-haran-mision-de-salud-en-venezuela-246860')
+          img.card-img-top(src='img/noti2.jpeg' alt='')
+        .card-body
+          h4.card-title
+            a(href='http://www.eltiempo.com/mundo/venezuela/62-medicos-graduados-de-la-habana-haran-mision-de-salud-en-venezuela-246860') 62 m&eacute;dicos graduados cubanos prestar&aacute;n servicios en Venezuela
+    .col-lg-4.portfolio-item
+      .card.h-100
+        a(href='http://www.eltiempo.com/vida/salud/panorama-de-la-telemedicina-en-colombia-segun-estudio-246560')
+          img.card-img-top(src='img/noti3.jpeg' alt='')
+        .card-body
+          h4.card-title
+            a(href='http://www.eltiempo.com/vida/salud/panorama-de-la-telemedicina-en-colombia-segun-estudio-246560') Telemedicina: un servicio que sigue lejos de las zonas apartadas
+  br
+  br
+  .row
+    .col-lg-4.portfolio-item
+      .card.h-100
+        a(href='http://www.eltiempo.com/vida/salud/sancionaran-ley-que-da-remuneracion-a-residentes-medicos-242796')
+          img.card-img-top(src='img/noti4.jpeg' alt='')
+        .card-body
+          h4.card-title
+            a(href='http://www.eltiempo.com/vida/salud/sancionaran-ley-que-da-remuneracion-a-residentes-medicos-242796') As&iacute; es la ley por la que residentes m&eacute;dicos recibir&iacute;an remuneraci&oacute;n
+    .col-lg-4.portfolio-item
+      .card.h-100
+        a(href='http://www.eltiempo.com/vida/salud/naturopatia-y-el-libro-curar-con-la-fuerza-de-la-naturaleza-para-curar-enfermedades-241458')
+          img.card-img-top(src='img/noti5.jpeg' alt='')
+        .card-body
+          h4.card-title
+            a(href='http://www.eltiempo.com/vida/salud/naturopatia-y-el-libro-curar-con-la-fuerza-de-la-naturaleza-para-curar-enfermedades-241458') La f&oacute;rmula de un m&eacute;dico alem&aacute;n para tratar la depresi&oacute;n y otros males
+    .col-lg-4.portfolio-item
+      .card.h-100
+        a(href='http://www.eltiempo.com/vida/salud/ley-sobre-violencia-obstetrica-es-rechazada-por-especialistas-210668')
+          img.card-img-top(src='img/noti6.jpeg' alt='')
+        .card-body
+          h4.card-title
+            a(href='http://www.eltiempo.com/vida/salud/ley-sobre-violencia-obstetrica-es-rechazada-por-especialistas-210668') Fuerte debate por proyecto sobre violencia obst&eacute;trica
+  br
+  br
+  .row
+    .col-lg-4.portfolio-item
+      .card.h-100
+        a(href='http://www.eltiempo.com/vida/salud/prueba-de-sangre-puede-predecir-un-nacimiento-prematuro-228944')
+          img.card-img-top(src='img/noti7.jpeg' alt='')
+        .card-body
+          h4.card-title
+            a(href='http://www.eltiempo.com/vida/salud/prueba-de-sangre-puede-predecir-un-nacimiento-prematuro-228944') Prueba de sangre puede predecir un nacimiento prematuro
+    .col-lg-4.portfolio-item
+      .card.h-100
+        a(href='http://www.eltiempo.com/cultura/cine-y-tv/estreno-de-la-serie-the-resident-por-fox-214100')
+          img.card-img-top(src='img/noti8.jpeg' alt='')
+        .card-body
+          h4.card-title
+            a(href='http://www.eltiempo.com/cultura/cine-y-tv/estreno-de-la-serie-the-resident-por-fox-214100') En &lsquo;The Resident&rsquo;, no siempre los m&eacute;dicos son los h&eacute;roes
+    .col-lg-4.portfolio-item
+      .card.h-100
+        a(href='http://www.eltiempo.com/vida/salud/consejos-y-datos-de-planes-de-salud-en-colombia-222740')
+          img.card-img-top(src='img/noti9.jpeg' alt='')
+        .card-body
+          h4.card-title
+            a(href='http://www.eltiempo.com/vida/salud/consejos-y-datos-de-planes-de-salud-en-colombia-222740') &iquest;A qui&eacute;n piensa usted que debe confiarle su salud?
+// /.container
+br
+br
+center
+  a.fa.fa-facebook(href='www.facebook.com')
+  a.fa.fa-twitter(href='www.twitter.com')
+  a.fa.fa-google(href='wwww.gmail.com')
+  a.fa.fa-youtube(href='www.youtube.com')
+
+
+
+
+div
+  hr.featurette-divider
+  // FOOTER
+  footer.container
+    p.float-right
+      a(href='#') Ir Arriba
+    p
+      | &copy; 2017-2018 Company, Inc. &middot;
+      a(href='#') Privacy
+      |  &middot;
+      a(href='#') Terms
+
+script(src='jquery/jquery-3.3.1.min.js')
+script(src='bootstrap-4/js/bootstrap.min.js')
+script(src='js/index.js')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js')
+
+
+

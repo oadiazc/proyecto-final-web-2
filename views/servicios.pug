@@ -1,0 +1,132 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  link(rel='stylesheet' href='css/index.css')
+  title Document
+  link(rel='stylesheet' href='bootstrap-4/css/bootstrap.min.css')
+  link(rel='stylesheet' href='css/estilos.css')
+  link(rel='stylesheet' href='css/carousel.css')
+.container
+  .col-md-12
+    img#imag(src='img/presentacionPortada.jpg')
+  .col-md-12
+    header#hamburguesa2
+      nav.navbar.navbar-light.amber.lighten-4.mb-4
+        // Collapse button
+        button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent20' aria-controls='navbarSupportedContent20' aria-expanded='false' aria-label='Toggle navigation')
+          .animated-icon1
+            span
+            span
+            span
+        // Collapsible content
+        #navbarSupportedContent20.collapse.navbar-collapse
+          // Links
+          ul.navbar-nav.mr-auto
+            li.nav-item.active
+              a.nav-link(href='inicio')
+                | INICIO
+                span.sr-only (current)
+            li.nav-item
+              a.nav-link(href='servicios') SERVICIOS
+            li.nav-item
+              a.nav-link(href='citas') CITAS
+            li.nav-item
+              a.nav-link(href='resultados') RESULTADOS EN LINEA
+            li.nav-item
+              a.nav-link(href='contactenos') CONTACTENOS
+            li.nav-item
+              a.nav-link(href='quienes_somos') QUIENES SOMOS?
+          // Links
+        // Collapsible content
+      // /.Navbar
+center
+  h1#colortitulos
+    | SERVICIOS
+br
+br
+center
+  .container.marketing
+    // Three columns of text below the carousel
+    .row
+      .col-lg-4
+        img.rounded-circle(src='img/Inmunología.jpg' alt='Generic placeholder image' width='140' height='140')
+        h2#colortitulos Inmunolog&iacute;a
+        p
+          | A medida que avanza el conocimiento, es m&aacute;s claro que pese a la disponibilidad de antibi&oacute;ticos y otras
+          | terapias farmacol&oacute;gicas...
+        p
+          a#btn.btn.btn-secondary(href='inmunologia' role='button') IR &raquo;
+      // /.col-lg-4
+      .col-lg-4
+        img.rounded-circle(src='img/Hematología.jpg' alt='Generic placeholder image' width='140' height='140')
+        h2#colortitulos Hematolog&iacute;a 
+        p
+          | Por ser espor&aacute;dicas, muchas pruebas diagn&oacute;sticas son excluidas de los portafolios de servicio. Este laboratorio
+          | implementa pruebas...
+        p
+          a#btn.btn.btn-secondary(href='hematologia' role='button') IR &raquo;
+      // /.col-lg-4
+      .col-lg-4
+        img.rounded-circle(src='img/Microbiología.jpg' alt='Generic placeholder image' width='140' height='140')
+        h2#colortitulos Microbiolog&iacute;a
+        p
+          | En varios campos de la pr&aacute;ctica cl&iacute;nica de la Fundaci&oacute;n Valle del Lili, se involucra la atenci&oacute;n de pacientes
+          | que se encuentran...
+        p
+          a#btn.btn.btn-secondary(href='microbiologia' role='button') IR &raquo;
+    br
+    br
+    br
+    .row
+      // /.col-lg-4
+      .col-lg-4
+        img.rounded-circle(src='img/Parasitología.JPG' alt='Generic placeholder image' width='140' height='140')
+        h2#colortitulos Parasitolog&iacute;a
+        p
+          | El estudio de la Parasitolog&iacute;a m&eacute;dica es importante para establecer el diagn&oacute;stico de la parasitosis
+          | humana, ya que en muchos casos...
+        p
+          a#btn.btn.btn-secondary(href='parasitologia' role='button') IR &raquo;
+      // /.col-lg-4
+      .col-lg-4
+        img.rounded-circle(src='img/Química General.jpg' alt='Generic placeholder image' width='140' height='140')
+        h2#colortitulos Qu&iacute;mica General
+        p
+          | La Bioqu&iacute;mica cl&iacute;nica es la rama de las ciencias de laboratorio cl&iacute;nico dedicada al estudio in vitro
+          | e in vivo de propiedades bioqu&iacute;micas...
+        p
+          a#btn.btn.btn-secondary(href='quimica' role='button') IR &raquo;
+      // /.col-lg-4
+      .col-lg-4
+        img.rounded-circle(src='img/Banco de Sangre.png' alt='Generic placeholder image' width='140' height='140')
+        h2#colortitulos Banco de Sangre
+        p
+          | Donar sangre es un acto de Solidaridad y Responsabilidad Social, por esta raz&oacute;n, el Banco de Sangre de
+          | la Fundaci&oacute;n Valle del Diaz, tiene ...
+        p
+          a#btn.btn.btn-secondary(href='banco_sangre' role='button') IR &raquo;
+      // /.col-lg-4
+    // /.row
+  br
+  br
+  hr.featurette-divider
+  // FOOTER
+  footer.container
+    p.float-right
+      a(href='#') Ir Arriba
+    p
+      | &copy; 2017-2018 Company, Inc. &middot;
+      a(href='#') Privacy
+      |  &middot;
+      a(href='#') Terms
+// /.container
+script(src='bootstrap-4/js/jquery-3.3.1.slim.min.js')
+script(src='bootstrap-4/js/bootstrap.min.js')
+script.
+  $(document).ready(function () {
+  $('.animated-icon1,.animated-icon3,.animated-icon4').click(function () {
+  $(this).toggleClass('open');
+  });
+  });
